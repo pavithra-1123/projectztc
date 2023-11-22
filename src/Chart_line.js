@@ -24,7 +24,6 @@ import {Chart as ChartJS,
     TableHead,
     TableRow, 
   } from "@mui/material";
-  // import { manageOptions, monthList } from "./utils/chartUtils";
 ChartJS.register(
   CategoryScale,
   LinearScale,
@@ -97,7 +96,7 @@ export const My_Chartpage=()=>
         borderColor: "transparent",
         backgroundColor: "green",
         tension: 0.4,
-        borderWidth: 20,
+        borderWidth: 10,
       },
     ],
   };
@@ -118,7 +117,7 @@ export const My_Chartpage=()=>
         borderColor: "transparent",
         backgroundColor: "green",
 
-        borderWidth: 25,
+        borderWidth: 10,
       },
     ],
   };
@@ -170,36 +169,38 @@ const getManagevalue =()=>
     <>
     <div className='row justify-content-end ' style={{color:'gray', backgroundColor:'lightgray'}}>
         <div className='container row justify-content-end mt-5 ms-5 '>
-        <div className='col-2'>
+        <div className='col-3'>
         </div>
+
         {/* bar1 */}
         <div className='card col row justify-content-end'>
             <div>
             <Grid container spacing={0} p={3}>
-          <h5 className='me-5'>Checking Account</h5>
+            
+            <h5 className='me-5'>Checking Account</h5>
           
-         <select className='ms-5 me-5' id='list' onChange={getManagevalue}>
-                <option value='Dashboard'>Dashboard</option>
-                 <option value='Accounts'>Accounts</option>
-                <option value='Payroll'>Payroll</option>
-                 <option value='Reports'>Reports</option>
-                 <option value='Advisor'>Advisor</option>
-                  <option value='Contacts'>Contacts</option>
-          </select>
-          <select className='ms-5' id='list' onChange={getManagevalue}>
-                <option value='January'>January</option>
-                 <option value='February'>February</option>
-                <option value='March'>March</option>
-                 <option value='April'>April</option>
-                 <option value='May'>May</option>
-                  <option value='June'>June</option>
-                  <option value='July'>July</option>
-                  <option value='August'>August</option>
-                  <option value='September'>September</option>
-                  <option value='October'>October</option>
-                  <option value='November'>November</option>
-                  <option value='December'>December</option>
-          </select>
+          <select className=' me-5' id='list' onChange={getManagevalue}>
+                 <option value='Dashboard'>Dashboard</option>
+                  <option value='Accounts'>Accounts</option>
+                 <option value='Payroll'>Payroll</option>
+                  <option value='Reports'>Reports</option>
+                  <option value='Advisor'>Advisor</option>
+                   <option value='Contacts'>Contacts</option>
+           </select>
+           <select className='ms-5' id='list' onChange={getManagevalue}>
+                 <option value='January'>January</option>
+                  <option value='February'>February</option>
+                 <option value='March'>March</option>
+                  <option value='April'>April</option>
+                  <option value='May'>May</option>
+                   <option value='June'>June</option>
+                   <option value='July'>July</option>
+                   <option value='August'>August</option>
+                   <option value='September'>September</option>
+                   <option value='October'>October</option>
+                   <option value='November'>November</option>
+                   <option value='December'>December</option>
+           </select>
           <hr style={{border:'2px solid #ccc' , margin: '30px 1px',width:'1000px' }} />
           <Grid item md={11} xs={12} sm={12} sx={{ display: "flex" }}>
            
@@ -269,7 +270,7 @@ const getManagevalue =()=>
 
          {/* bar3 */}
         <div className='container row justify-content-end mt-5 ms-5 '>
-        <div className='col-2'>
+        <div className='col-3'>
         </div>
         <div className='card col me-5'>
         <div>
